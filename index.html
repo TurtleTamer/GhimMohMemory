@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghim Moh - a memory | 追念锦茂</title>
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="panorama"></div>
+
+    <script>
+        pannellum.viewer('panorama', {
+            "default": {
+                "firstScene": "01",
+                //"sceneFadeDuration": 1000
+            },
+            "autoLoad": true,
+            /*
+             * Uncomment the next line to print the coordinates of mouse clicks
+             * to the browser's developer console, which makes it much easier
+             * to figure out where to place hot spots. Always remove it when
+             * finished, though.
+             */
+            //"hotSpotDebug": true,
+            "scenes": {
+                // entrance
+                "01": {
+                    "title": "Entrance 入口",
+                    "hfov": 120,
+                    "yaw": -180,
+                    "type": "equirectangular",
+                    "panorama": "/images/01.jpg",
+                    "hotSpots": [{
+                        "pitch": -40,
+                        "yaw": -180,
+                        "type": "scene",
+                        "text": "Enter 进",
+                        "sceneId": "02"
+                    }]
+                },
+                // living room
+                "02": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/02.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "03"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -130,
+                            "type": "scene",
+                            "text": "Exit 出",
+                            "sceneId": "01"
+                        }
+                    ]
+                },
+                "03": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/03.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "04"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "02",
+                            "targetYaw": -130
+
+                        }
+                    ]
+                },
+                "04": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/04.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "05"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "03",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "05": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/05.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "06"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "04",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "06": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/06.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "07"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "05",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "07": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/07.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "08"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "06",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "08": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/08.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "09"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "07",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "09": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/09.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "10"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "08",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "10": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/10.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "11"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "09",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "11": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/11.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "12"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "10",
+                            "targetYaw": -100
+                        },
+                        {
+                            "pitch": -30,
+                            "yaw": -170,
+                            "type": "scene",
+                            "sceneId": "16"
+
+                        },
+                        {
+                            "pitch": -28,
+                            "yaw": 150,
+                            "type": "scene",
+                            "sceneId": "18"
+
+                        }
+
+                    ]
+                },
+                "12": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/12.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "13"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "11",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "13": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/13.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "14"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "12",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "14": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/14.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "15"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "13",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "15": {
+                    "title": "Living Room 客厅",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/15.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "19"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "14",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                // bedroom 1
+                "16": {
+                    "title": "Bedroom 卧室",
+                    "hfov": 120,
+                    "yaw": -170,
+                    "type": "equirectangular",
+                    "panorama": "/images/16.jpg",
+                    "hotSpots": [{
+                            "pitch": -30,
+                            "yaw": 55,
+                            "type": "scene",
+                            "sceneId": "11",
+                            "targetYaw": 0
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -80,
+                            "type": "scene",
+                            "text": "Close 关",
+                            "sceneId": "17",
+                            "targetYaw": -80
+                        }
+                    ]
+                },
+                "17": {
+                    "title": "Bedroom 卧室",
+                    "hfov": 120,
+                    "yaw": -170,
+                    "type": "equirectangular",
+                    "panorama": "/images/17.jpg",
+                    "hotSpots": [{
+                            "pitch": -30,
+                            "yaw": 55,
+                            "type": "scene",
+                            "sceneId": "11",
+                            "targetYaw": 0
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -80,
+                            "type": "scene",
+                            "text": "Open 开",
+                            "sceneId": "16",
+                            "targetYaw": -80
+                        }
+                    ]
+                },
+                // bedroom 2
+                "18": {
+                    "title": "Bedroom 卧室",
+                    "hfov": 120,
+                    "yaw": 150,
+                    "type": "equirectangular",
+                    "panorama": "/images/18.jpg",
+                    "hotSpots": [{
+                        "pitch": -35,
+                        "yaw": -35,
+                        "type": "scene",
+                        "sceneId": "11",
+                        "targetYaw": 0
+                    }]
+                },
+                // kitchen
+                "19": {
+                    "title": "Kitchen 厨房",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/19.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "20"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "15",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+                "20": {
+                    "title": "Kitchen 厨房",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/20.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 100,
+                            "type": "scene",
+                            "sceneId": "21"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "19",
+                            "targetYaw": -100
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -180,
+                            "type": "scene",
+                            "sceneId": "22"
+                        }
+                    ]
+                },
+                "21": {
+                    "title": "Kitchen 厨房",
+                    "hfov": 120,
+                    "yaw": 100,
+                    "type": "equirectangular",
+                    "panorama": "/images/21.jpg",
+                    "hotSpots": [{
+                            "pitch": -40,
+                            "yaw": 120,
+                            "type": "scene",
+                            "sceneId": "24"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -100,
+                            "type": "scene",
+                            "sceneId": "20",
+                            "targetYaw": -100
+                        }
+                    ]
+                },
+
+                // bathroom
+                "22": {
+                    "title": "Bathroom 浴室",
+                    "hfov": 120,
+                    "pitch": -20,
+                    "yaw": -25,
+                    "type": "equirectangular",
+                    "panorama": "/images/22.jpg",
+                    "hotSpots": [{
+                            "pitch": -30,
+                            "yaw": -30,
+                            "type": "scene",
+                            "text": "Close 关",
+                            "sceneId": "23"
+                        },
+                        {
+                            "pitch": -60,
+                            "yaw": 10,
+                            "type": "scene",
+                            "sceneId": "20",
+                            "targetYaw": 0
+                        }
+                    ]
+                },
+                "23": {
+                    "title": "Bathroom 浴室",
+                    "hfov": 120,
+                    "pitch": -20,
+                    "yaw": -25,
+                    "type": "equirectangular",
+                    "panorama": "/images/23.jpg",
+                    "hotSpots": [{
+                            "pitch": -30,
+                            "yaw": -30,
+                            "type": "scene",
+                            "text": "Open 开",
+                            "sceneId": "22"
+                        },
+                        {
+                            "pitch": -60,
+                            "yaw": 10,
+                            "type": "scene",
+                            "sceneId": "20",
+                            "targetYaw": 0
+                        }
+                    ]
+                },
+                // utility room
+                "24": {
+                    "title": "Utility Room 杂物间",
+                    "hfov": 120,
+                    "yaw": 180,
+                    "type": "equirectangular",
+                    "panorama": "/images/24.jpg",
+                    "hotSpots": [{
+                        "pitch": -50,
+                        "yaw": 30,
+                        "type": "scene",
+                        "sceneId": "21",
+                        "targetYaw": -100
+                    }]
+                },
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>
